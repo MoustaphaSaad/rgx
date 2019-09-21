@@ -80,7 +80,7 @@ namespace rgx
 				{
 					int count = pop_int(bytes, t.ip);
 					bool match = false;
-					for(size_t i = 0; i < count; ++i)
+					for(size_t i = 0; i < size_t(count); ++i)
 					{
 						auto local_op = ISA(pop_byte(bytes, t.ip));
 						if(local_op == ISA_RANGE)
